@@ -57,3 +57,26 @@ print(Find)           #-1      #if substring is not in string, O/P is -1
 a= "The Great Britain"
 Split = a.split()
 print(Split)           #['The', 'Great', 'Britain']
+Split = a.split(" ", 1)        #str.split("seperator", maxsplit)
+print(Split)           #['The', 'Great Britain']
+
+#strip()             Removes leading/trailing 
+x = "  Hell No  "      
+Strip = x.strip()               #Remove Whitespace as Default
+print(Strip)            #Hell No
+y = "**%!Hell No*%%!"
+Strip = y.strip("!*%")
+print(Strip)            #Hell No
+
+#ReEx
+import re
+s1 = "The BodyGuard is the best album"
+# Define the pattern to search for
+pattern = r"Body"
+# Use the search() function to search for the pattern in the string
+result = re.search(pattern, s1)
+# Check if a match was found
+if result:
+    print("Match found!")
+else:
+    print("Match not found.")
