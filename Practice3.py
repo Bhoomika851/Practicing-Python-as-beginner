@@ -68,6 +68,13 @@ y = "**%!Hell No*%%!"
 Strip = y.strip("!*%")
 print(Strip)            #Hell No
 
+#title()             Capitalise only first letter of each word
+z = "the biggest fish"
+print(z.title())        #The Biggest Fish
+ 
+#capitalise()        Capitalise only first letter of string
+print(z.capitalize())   #The biggest fish
+
 #ReEx
 import re
 s1 = "The BodyGuard is the best album"
